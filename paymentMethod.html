@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment methods</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f5f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .heading {
+            text-align: center;
+            color: #d2691e;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .payment-card {
+            background-color: #faf3e0;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .payment-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .subheading {
+            font-size: 1.4rem;
+            color: #8b4513;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #333;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: '✔️';
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 600px) {
+            .heading {
+                font-size: 1.5rem;
+            }
+
+            .subheading {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            
+            <h1 class="heading">💵 Payment Method</h1>
+            <div class="payment-card">
+                <h3 class="subheading">Cash on Delivery (COD)</h3>
+            <ul>
+                <li>We currently accept only Cash on Delivery (COD) for all orders.</li>
+                <li>Please ensure you have the exact amount ready at the time of delivery.</li>
+                <li>Payment will be collected by our delivery personnel upon receiving your order.</li>
+            </ul>
+        </div>
+        <div class="payment-card">
+            <h3 class="subheading">🔒 Secure & Convenient</h3>
+            <ul>
+                <li>No need for online transactions—pay securely in cash when you receive your cake.</li>
+                <li>A confirmation message will be sent after placing the order.</li>
+            </ul>
+        </div>
+        <div class="payment-card">
+            <h3 class="subheading">❗ Important Note</h3>
+                <ul>
+                    <li>Please confirm your order at least 1 day before the delivery date.</li>
+                    <li>For any queries, contact us at 📞 +91-12345 67890 or 📧 bakeNwake@gmail.com</li>
+                </ul>
+        </div>
+        </div>
+    </section>
+    
+</body>
+</html>
